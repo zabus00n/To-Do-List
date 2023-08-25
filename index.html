@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To Do List</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Play"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <main>
+            <div class="main-container">
+                <h1>To Do List</h1>
+                <div class="input-cta-container">
+                    <div class="input-container">
+                        <p>Nueva tarea</p>
+                        <input type="text" placeholder="Ingresa una tarea" id="new-to-do-item" />
+                    </div>
+                    <button class="cta-btn">Agregar</button>
+                </div>
+                <div class="summary-container">
+                    <div class="summary">
+                        <p>Total: <span class="total-count">0</span></p>
+                        <p>Realizadas: <span class="done-count">0</span></p>
+                    </div>
+                    <div class="to-do-list-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tarea</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="to-do-list-table">
+                                <!-- Table rows will be added dynamically here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+</html>
