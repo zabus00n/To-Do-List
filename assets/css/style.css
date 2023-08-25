@@ -1,0 +1,144 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-family: "Roboto", sans-serif;
+    background-color: #ececec;
+    padding: 24px;
+    margin: 24px 120px;
+    border-radius: 4px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 28px;
+}
+
+h1 {
+    padding-bottom: 20px;
+    border-bottom: solid 1px gray;
+    width: 100%;
+}
+
+input {
+    border: solid thin gray;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px 8px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.cta-btn {
+    font-family: "Roboto", sans-serif;
+    border: none;
+    color: white;
+    background-color: #1a7742;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 16px;
+    height: 44px;
+    line-height: 16px;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px 0.6px rgba(0, 0, 0, 0.2);
+}
+
+.input-cta-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+}
+
+.summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 12px;
+}
+
+.summary span {
+    font-weight: 700;
+}
+
+.to-do-list-container {
+    width: 50%;
+    padding-right: 32px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding-bottom: 16px;
+    text-align: left; 
+}
+
+th {
+    font-weight: 700;
+}
+
+#to-do-list-table td:nth-child(1) {
+    width: 5%;
+}
+
+#to-do-list-table td:nth-child(2) {
+    width: 75%;
+}
+
+#to-do-list-table td:nth-child(3) {
+    width: 5%;
+}
+
+#to-do-list-table td:nth-child(4) {
+    width: 10%;
+}
+.checkbox {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;  
+}
+
+.delete-btn img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
